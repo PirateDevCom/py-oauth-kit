@@ -1,0 +1,49 @@
+[project]
+name = "py-oauth-kit"
+version = "1.0.0"
+description = "OAuth 2.0 helpers: build authorization URLs, exchange codes for tokens and fetch user details."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Pirate Developer", email = "57877111+PirateDevCom@users.noreply.github.com" },
+]
+requires-python = ">=3.13"
+dependencies = ["httpx>=0.28.1"]
+keywords = ["oauth", "oauth2", "openid-connect", "login", "sign-in", "social-auth"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Security",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/PirateDevCom/py-oauth-kit"
+Documentation = "https://github.com/PirateDevCom/py-oauth-kit/tree/main/docs"
+Source = "https://github.com/PirateDevCom/py-oauth-kit"
+Issues = "https://github.com/PirateDevCom/py-oauth-kit/issues"
+
+[project.optional-dependencies]
+apple = [
+    "cryptography>=50.0.2",
+]
+
+[tool.uv.build-backend]
+# The distribution is py-oauth-kit, but the import package stays py_oauth.
+module-name = "py_oauth"
+
+[build-system]
+requires = ["uv_build>=0.11.4,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
