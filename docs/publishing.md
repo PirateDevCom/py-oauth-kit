@@ -7,12 +7,8 @@ and [PyPI](https://pypi.org).
 
 TestPyPI and PyPI are separate sites, with separate accounts and tokens.
 
-1. On each site, open **Account settings > API tokens** and click **Add API
-   token**. Scope it to the `py-oauth-kit` project. (For the very first upload,
-   before the project exists, use an account-wide token, then replace it with a
-   project-scoped one.)
-2. Save both tokens in `~/.pypirc`, which [twine](https://twine.readthedocs.io)
-   reads when uploading:
+1. On each site, open **Account settings > API tokens** and click **Add API token**. Scope it to the `py-oauth-kit` project. (For the very first upload, before the project exists, use an account-wide token, then replace it with a project-scoped one.)
+2. Save both tokens in `~/.pypirc`, which [twine](https://twine.readthedocs.io) reads when uploading:
 
    ```ini
    [distutils]
@@ -39,18 +35,15 @@ TestPyPI and PyPI are separate sites, with separate accounts and tokens.
 
 ### 1. Bump the version
 
-Update `version` in `pyproject.toml`, using
-[semantic versioning](https://semver.org):
+Update `version` in `pyproject.toml`, using [semantic versioning](https://semver.org):
 
 - Patch (`1.0.0` → `1.0.1`): bug fixes.
 - Minor (`1.0.0` → `1.1.0`): new features, e.g. a new provider.
 - Major (`1.0.0` → `2.0.0`): breaking changes.
 
-Or run `uv version --bump patch` (or `minor`, `major`). It also updates the
-version in `uv.lock`.
+Or run `uv version --bump patch` (or `minor`, `major`). It also updates the version in `uv.lock`.
 
-A version can't be uploaded twice, even after deleting it. To fix a broken
-upload, publish a new version.
+A version can't be uploaded twice, even after deleting it. To fix a broken upload, publish a new version.
 
 ### 2. Test and build
 
@@ -71,8 +64,7 @@ uvx twine upload -r testpypi dist/*
 
 ### 4. Check the TestPyPI release
 
-Open `https://test.pypi.org/project/py-oauth-kit/` and check the page. Then install
-it in a clean environment, from outside the project folder:
+Open `https://test.pypi.org/project/py-oauth-kit/` and check the page. Then install it in a clean environment, from outside the project folder:
 
 ```sh
 cd /tmp
@@ -82,8 +74,7 @@ uv run --no-project --refresh \
   python -c "import py_oauth; print('ok')"
 ```
 
-Replace `X.Y.Z` with the new version. `--index-strategy unsafe-best-match`
-installs httpx and cryptography from PyPI, as TestPyPI may not have them.
+Replace `X.Y.Z` with the new version. `--index-strategy unsafe-best-match` installs httpx and cryptography from PyPI, as TestPyPI may not have them.
 
 ### 5. Publish to PyPI
 

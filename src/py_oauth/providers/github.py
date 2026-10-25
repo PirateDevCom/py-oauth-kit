@@ -18,7 +18,7 @@ class GitHub(OAuthProvider):
         client_id (str): Client ID from the OAuth App's settings.
         client_secret (str): Client secret from the OAuth App's settings.
         redirect_uri (str): URI GitHub redirects to after authorization.
-            Must match or be under the app's authorization callback URL.
+            Must match or be under the app's redirect URI.
         client (httpx.Client | None): HTTP client to send requests with.
     """
 

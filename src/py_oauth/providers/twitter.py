@@ -10,14 +10,14 @@ class Twitter(OAuthProvider):
     ``get_access_token``.
 
     The email needs the ``users.email`` scope (requested by default) and the
-    app's "Request email from users" permission enabled in the X developer
-    portal. X only returns confirmed emails, so ``Identity.email_verified`` is
+    app's "Request email from users" permission enabled in the X Developer
+    Console. X only returns confirmed emails, so ``Identity.email_verified`` is
     True whenever there's an email.
 
     Args:
-        client_id (str): OAuth 2.0 client ID from the X developer portal.
-        client_secret (str): OAuth 2.0 client secret from the X developer
-            portal.
+        client_id (str): OAuth 2.0 client ID from the X Developer Console.
+        client_secret (str): OAuth 2.0 client secret from the X Developer
+            Console.
         redirect_uri (str): URI X redirects to after authorization. Must be
             listed under the app's callback URIs.
         client (httpx.Client | None): HTTP client to send requests with.
