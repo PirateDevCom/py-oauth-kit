@@ -8,7 +8,7 @@ Since November 2025, new Reddit API access needs Reddit's approval under its Res
 
 ## Steps
 
-1. Go to [Reddit app preferences](https://www.reddit.com/prefs/apps) and click **"are you a developer? create an app..."** (or **"create another app..."** if you already have one).
+1. Go to [Reddit app preferences](https://www.reddit.com/prefs/apps) and click **are you a developer? create an app...** (or **create another app...** if you already have one).
 2. Enter the following details, then click **create app**:
    - name
    - Type: **web app**
@@ -16,7 +16,7 @@ Since November 2025, new Reddit API access needs Reddit's approval under its Res
    - about url (optional)
    - redirect uri: your `redirect_uri`, e.g. `https://example.com/auth/reddit/callback`
 3. Copy the **client ID** (the string under the app's name) and the **secret**.
-4. (Optional) Click **"edit"** on the app and upload an icon. Reddit shows it to users on the authorization screen.
+4. (Optional) Click **edit** on the app and upload an icon. Reddit shows it to users on the authorization screen.
 
 ## Use with py-oauth-kit
 

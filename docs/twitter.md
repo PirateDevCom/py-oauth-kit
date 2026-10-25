@@ -4,9 +4,9 @@ Create an X app with OAuth 2.0 to get a client ID and secret for `py_oauth.Twitt
 
 ## Steps
 
-1. Sign in to the [X Developer Console](https://console.x.com). Open **"Projects"** under **"Access"** in the sidebar and create a project. Every app must belong to one.
-2. Open **"Apps"** in the sidebar and click **"Create App"** to create an app in that project.
-3. Click the app, open the **"Keys & Tokens"** tab, and under **"User authentication settings"** click **"Set up"**. Enter the following details, then click **Save**:
+1. Sign in to the [X Developer Console](https://console.x.com). Open **Projects** under **Access** in the sidebar and create a project. Every app must belong to one.
+2. Open **Apps** in the sidebar and click **Create App** to create an app in that project.
+3. Click the app, open the **Keys & Tokens** tab, and under **User authentication settings** click **Set up**. Enter the following details, then click **Save**:
    - App permissions: **Read**
    - Request email from users: turn it on to get the user's email.
    - Type of App: **Web App, Automated App or Bot**. This makes it a confidential client, which gets a client secret.
@@ -14,7 +14,7 @@ Create an X app with OAuth 2.0 to get a client ID and secret for `py_oauth.Twitt
    - Website URL
    - Terms of service URL (needed to request email)
    - Privacy policy URL (needed to request email)
-4. Copy the **OAuth 2.0 Client ID** and **Client Secret** from the **"Keys & Tokens"** tab. _Don't use the Consumer Key, Access Token or Bearer Token: the first two are for OAuth 1.0a, and the Bearer Token is for app-only access, not user sign-in._
+4. Copy the **OAuth 2.0 Client ID** and **Client Secret** from the **Keys & Tokens** tab. _Don't use the Consumer Key, Access Token or Bearer Token: the first two are for OAuth 1.0a, and the Bearer Token is for app-only access, not user sign-in._
 
 ## Use with py-oauth-kit
 

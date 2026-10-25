@@ -4,14 +4,14 @@ Register an app in Microsoft Entra ID to get a client ID and secret for `py_oaut
 
 ## Steps
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) (or the Azure portal) and go to **"App registrations > New registration"**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) (or the Azure portal) and go to **App registrations > New registration**.
 2. Enter the following details, then click **Register**:
    - Name
    - Supported account types: who can sign in. This decides the `tenant` to use (see below).
    - Redirect URI: platform **Web**, and your `redirect_uri`, e.g. `https://example.com/auth/microsoft/callback`
-3. On the **"Overview"** page, copy the **Application (client) ID** and, for single-tenant apps, the **Directory (tenant) ID**.
-4. Go to **"Certificates & secrets > Client secrets"** and click **"New client secret"**. Enter a description, pick an expiry, then click **Add**. Copy the secret's **Value** (not its ID). It's shown only once, and it expires: create a new one before then.
-5. (Optional) On **"Branding & properties"**, fill in the following details, then click **Save**. Microsoft shows them to users on the consent screen:
+3. On the **Overview** page, copy the **Application (client) ID** and, for single-tenant apps, the **Directory (tenant) ID**.
+4. Go to **Certificates & secrets > Client secrets** and click **New client secret**. Enter a description, pick an expiry, then click **Add**. Copy the secret's **Value** (not its ID). It's shown only once, and it expires: create a new one before then.
+5. (Optional) On **Branding & properties**, fill in the following details, then click **Save**. Microsoft shows them to users on the consent screen:
    - Logo
    - Home page URL
    - Terms of service URL

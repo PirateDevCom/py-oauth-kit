@@ -4,14 +4,14 @@ Create a Yahoo app to get a client ID and secret for `py_oauth.Yahoo`.
 
 ## Steps
 
-1. Go to the [Yahoo Developer Network Apps page](https://developer.yahoo.com/apps/) and click **"Create an App"**.
+1. Go to the [Yahoo Developer Network Apps page](https://developer.yahoo.com/apps/) and click **Create an App**.
 2. Enter the following details, then click **Create App**:
    - Application Name
    - Description (optional)
    - Homepage URL (optional)
    - Redirect URI(s): your `redirect_uri`, e.g. `https://example.com/auth/yahoo/callback`
    - OAuth Client Type: **Confidential Client**
-   - API Permissions: under **"OpenID Connect Permissions"**, check **Email** and **Profile**
+   - API Permissions: under **OpenID Connect Permissions**, check **Email** and **Profile**
 3. Copy the **Client ID** and **Client Secret**.
 
 ## Use with py-oauth-kit

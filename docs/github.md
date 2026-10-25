@@ -6,13 +6,13 @@ py-oauth-kit supports OAuth Apps, not GitHub Apps.
 
 ## Steps
 
-1. Go to **"Settings > Developer settings > OAuth Apps"** ([direct link](https://github.com/settings/developers)) and click **"New OAuth App"**. To have an organization own the app, use the organization's **"Settings > Developer settings > OAuth Apps"** instead (organization owners only).
+1. Go to **Settings > Developer settings > OAuth Apps** ([direct link](https://github.com/settings/developers)) and click **New OAuth App**. To have an organization own the app, use the organization's **Settings > Developer settings > OAuth Apps** instead (organization owners only).
 2. Enter the following details, then click **Register application**:
    - Application name
    - Homepage URL
    - Application description (optional)
    - Redirect URI: your `redirect_uri`, e.g. `https://example.com/auth/github/callback`
-3. Copy the **Client ID**. Click **"Generate a new client secret"** and copy it. GitHub shows it only once.
+3. Copy the **Client ID**. Click **Generate a new client secret** and copy it. GitHub shows it only once.
 4. (Optional) Upload an application logo on the app's settings page. GitHub shows it to users on the authorization screen.
 
 ## Use with py-oauth-kit

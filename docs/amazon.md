@@ -5,15 +5,15 @@ Set up Login with Amazon to get a client ID and secret for `py_oauth.Amazon`.
 ## Steps
 
 1. Sign in to the [Login with Amazon console](https://developer.amazon.com/loginwithamazon/console/site/lwa/overview.html) with an Amazon Developer account.
-2. Click **"Create a New Security Profile"**. Enter the following details, then click **Save**:
+2. Click **Create a New Security Profile**. Enter the following details, then click **Save**:
    - Security Profile Name
    - Security Profile Description
    - Consent Privacy Notice URL
    - Consent Logo Image (optional)
-3. Open the security profile's **"Web Settings"** and click **Edit**.
-4. (Optional) Under **"Allowed Origins"**, add the origins of pages that use the Login with Amazon JavaScript SDK, e.g. `https://example.com`. Not needed when your backend redirects users to Amazon.
-5. Under **"Allowed Return URLs"**, add your `redirect_uri` (HTTPS), e.g. `https://example.com/auth/amazon/callback`. Click **Save**.
-6. Copy the **Client ID** and **Client Secret** from **"Web Settings"**.
+3. Open the security profile's **Web Settings** and click **Edit**.
+4. (Optional) Under **Allowed Origins**, add the origins of pages that use the Login with Amazon JavaScript SDK, e.g. `https://example.com`. Not needed when your backend redirects users to Amazon.
+5. Under **Allowed Return URLs**, add your `redirect_uri` (HTTPS), e.g. `https://example.com/auth/amazon/callback`. Click **Save**.
+6. Copy the **Client ID** and **Client Secret** from **Web Settings**.
 
 ## Use with py-oauth-kit
 

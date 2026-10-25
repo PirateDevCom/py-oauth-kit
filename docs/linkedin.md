@@ -4,15 +4,15 @@ Create a LinkedIn app with Sign In with LinkedIn using OpenID Connect to get a c
 
 ## Steps
 
-1. Go to [LinkedIn Developers](https://www.linkedin.com/developers/apps) and click **"Create app"**.
+1. Go to [LinkedIn Developers](https://www.linkedin.com/developers/apps) and click **Create app**.
 2. Enter the following details, accept the legal agreement, then click **Create app**:
    - App name
    - LinkedIn Page: your company page. The page's admin may need to verify the app.
    - Privacy policy URL (optional)
    - App logo
-3. Open the **"Products"** tab and click **"Request access"** next to **Sign In with LinkedIn using OpenID Connect**.
-4. Open the **"Auth"** tab. Under **"Authorized redirect URLs for your app"**, add your `redirect_uri`, e.g. `https://example.com/auth/linkedin/callback`. Click **Update**.
-5. Copy the **Client ID** and **Primary Client Secret** from the **"Auth"** tab.
+3. Open the **Products** tab and click **Request access** next to **Sign In with LinkedIn using OpenID Connect**.
+4. Open the **Auth** tab. Under **Authorized redirect URLs for your app**, add your `redirect_uri`, e.g. `https://example.com/auth/linkedin/callback`. Click **Update**.
+5. Copy the **Client ID** and **Primary Client Secret** from the **Auth** tab.
 
 ## Use with py-oauth-kit
 

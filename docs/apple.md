@@ -16,7 +16,7 @@ All steps are in [Certificates, Identifiers & Profiles](https://developer.apple.
 
 Sign in with Apple for the web must be linked to a primary App ID. Skip this if you already have an App ID with Sign in with Apple enabled.
 
-1. Go to **"Identifiers"** and click **"+"**. Choose **App IDs**, click **Continue**, choose **App**, then click **Continue**.
+1. Go to **Identifiers** and click **+**. Choose **App IDs**, click **Continue**, choose **App**, then click **Continue**.
 2. Enter the following details, then click **Continue** and **Register**:
    - Description
    - Bundle ID: **Explicit**, e.g. `com.example.app`
@@ -26,11 +26,11 @@ Sign in with Apple for the web must be linked to a primary App ID. Skip this if 
 
 The Services ID is your `client_id`.
 
-1. Go to **"Identifiers"** and click **"+"**. Choose **Services IDs**, then click **Continue**.
+1. Go to **Identifiers** and click **+**. Choose **Services IDs**, then click **Continue**.
 2. Enter the following details, then click **Continue** and **Register**:
    - Description: users see it on the consent screen, so use your app's name.
    - Identifier, e.g. `com.example.signin`
-3. Open the new Services ID, enable **Sign in with Apple** and click **"Configure"**. Enter the following details, then click **Done**:
+3. Open the new Services ID, enable **Sign in with Apple** and click **Configure**. Enter the following details, then click **Done**:
    - Primary App ID: the App ID from step 1
    - Domains and Subdomains: your domain, e.g. `example.com` (without `https://`)
    - Return URLs: your full `redirect_uri`, e.g. `https://example.com/auth/apple/callback`
@@ -38,14 +38,14 @@ The Services ID is your `client_id`.
 
 ### 3. Create a key
 
-1. Go to **"Keys"** and click **"+"**.
-2. Enter a key name, enable **Sign in with Apple** and click **"Configure"**. Select your primary App ID, then click **Save**.
+1. Go to **Keys** and click **+**.
+2. Enter a key name, enable **Sign in with Apple** and click **Configure**. Select your primary App ID, then click **Save**.
 3. Click **Continue** and **Register**, then **download the `.p8` file**. You can only download it once.
 4. Note the **Key ID** shown on the key's page.
 
 ### 4. Find your Team ID
 
-Your Team ID is shown in the top right of the developer account, and under **"Membership details"**.
+Your Team ID is shown in the top right of the developer account, and under **Membership details**.
 
 ## Use with py-oauth-kit
 
